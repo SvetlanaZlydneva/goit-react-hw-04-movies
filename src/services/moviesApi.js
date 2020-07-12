@@ -12,7 +12,9 @@ const fetchTrending = () => {
 
 const fetchSearch = query => {
   return axios
-    .get(`search/movie/?query=${query}`)
+    .get(
+      `/search/movie?language=en-US&query=${query}&page=1&include_adult=false`,
+    )
     .then(response => response.data.results);
 };
 
