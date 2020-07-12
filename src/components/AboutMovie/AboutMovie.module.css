@@ -1,0 +1,28 @@
+.AboutMovie {
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+}
+.AboutMovieBox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.Image img {
+  max-width: 300px;
+}
+.Description {
+  padding: 0 20px;
+}
+.GoBack {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: #dc143c;
+  border: 2px dotted #fff;
+}
