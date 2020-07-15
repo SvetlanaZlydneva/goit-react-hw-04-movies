@@ -40,8 +40,8 @@ class MoviesView extends Component {
     }
   }
 
-  async fetch(query) {
-    await Api.fetchSearch(query)
+  fetch(query) {
+    Api.fetchSearch(query)
       .then(movies => {
         if (movies.length === 0) this.setState({ empty: true });
         this.setState({ movies });
